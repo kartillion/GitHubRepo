@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<title>Test App</title>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script scr="js/zepto.min.js"></script>
+
+</head>
+ 
+<body>
+	<button id="button1">Do it</button>
+	<button id="button2">Clear</button>
+	<div id="results"></div>
+	
+
+<script>
+$('#button1').click(function(){
+	//SILLY.DoIt($('#results'));
+	$('#results').prepend(Date() + '<br/>');
+	//alert("hi");
+});
+
+$('#button2').click(function(){
+	$('#results').html('');
+});
+</script>	
+</body>
+</html>
